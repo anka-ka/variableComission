@@ -1,5 +1,5 @@
 fun main() {
-    println(calculateCommission("Mastercard", 0.0, 76000.0))
+    println(calculateCommission("Vk Pay", 0.0, 1000.0))
 }
 
 fun calculateCommission(cardType: String, sumOfPastTransaction: Double, currentTransaction: Double): Double {
