@@ -1,12 +1,12 @@
 fun main() {
-    println(calculateCommission("Vk Pay", 0.0, 1000.0))
+    println(calculateCommission("Mastercard", 0.0, 76000.0))
 }
 
 fun calculateCommission(cardType: String, sumOfPastTransaction: Double, currentTransaction: Double): Double {
     var comission = 0.0
     when {
-        (cardType == "Mastercard" && sumOfPastTransaction > 75000) ||
-                (cardType == "Maestro" && sumOfPastTransaction > 75000) -> comission =
+        (cardType == "Mastercard" && sumOfPastTransaction > 75000.0) ||
+                (cardType == "Maestro" && sumOfPastTransaction > 75000.0) -> comission =
             currentTransaction * 0.006 + 20
 
         cardType == "Visa" || cardType == "Мир" ->
